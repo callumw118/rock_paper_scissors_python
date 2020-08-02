@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+  {% block content %}
+  <main>
+    <heading>
+      <h1>Play Against the Computer</h1>
+      <h3>Enter your name and choose your move</h3>
+    </heading>
+
+    <form action="/play_computer" method="post">
+      <input type="text" name="player_name" placeholder="Enter your name">
+      <select name="choice">
+        <option value="rock">Rock</option>
+        <option value="paper">Paper</option>
+        <option value="scissors">Scissors</option>
+      </select>
+      <input type="submit" value="Play Game">
+    </form>
+    <h2>You chose {{ player_move }}</h2>
+    <h2>The computer chose {{ computer_move }}</h2>
+    <h2>The winner is {{ winner }}</h2>
+  </main>
+
+  {% endblock %}

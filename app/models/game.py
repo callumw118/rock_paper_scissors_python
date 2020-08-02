@@ -9,4 +9,3 @@ def play_game(player_1, player_2):
     if player_1.choice == "scissors" and player_2.choice == "paper":
         return player_1.name
     return player_2.name
-    

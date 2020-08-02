@@ -11,7 +11,7 @@ def index():
 def display_winner(player_1_choice, player_2_choice):
 
     player_1 = Player("Callum", player_1_choice)
-    player_2 = Player("Niijor", player_2_choice)
+    player_2 = Player("James", player_2_choice)
 
     players = [player_1, player_2]
 

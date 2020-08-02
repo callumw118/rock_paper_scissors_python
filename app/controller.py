@@ -35,5 +35,9 @@ def play_against_computer():
     computer = Player("Computer", computer_move)
 
     winner = play_game(player_1, computer)
-    print(winner)
-    return render_template("/play.html", player_move=player_move, computer_move=computer_move, winner=winner, title=f"{winner} wins!")
+    return render_template(
+        "/play.html", 
+        player_move=f"{player_name} chose {player_move}", 
+        computer_move=f"The computer chose {computer_move}", 
+        winner=f"The winner is {winner}", 
+        title=f"{winner} wins!")

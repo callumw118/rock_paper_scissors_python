@@ -19,7 +19,7 @@ def display_winner(player_1_choice, player_2_choice):
     winner = play_game(player_1, player_2)
     return render_template("index.html", title=f"{winner} wins!", players=players, winner=winner)
 
-@app.route("/play", methods=["GET", "POST"])
+@app.route("/play")
 def play_page():
     return render_template("play.html", title="Play Against Computer")
 
